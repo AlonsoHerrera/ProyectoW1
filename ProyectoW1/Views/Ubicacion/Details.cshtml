@@ -1,0 +1,48 @@
+﻿@model ProyectoW1.DBModels.Ubicacion
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Ubicacion</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Lugar)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Lugar)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.IdcantonNavigation)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.IdcantonNavigation.Idcanton)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.IddistritoNavigation)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.IddistritoNavigation.Iddistrito)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.IdeventoNavigation)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.IdeventoNavigation.Idevento)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.IdprovinciaNavigation)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.IdprovinciaNavigation.Idprovincia)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Idubicacion">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

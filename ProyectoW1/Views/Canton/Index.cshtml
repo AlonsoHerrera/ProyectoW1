@@ -1,0 +1,47 @@
+﻿@model IEnumerable<ProyectoW1.DBModels.Canton>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Idprovicia)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.CodCanton)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Nombre)
+                </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Idprovicia)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CodCanton)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nombre)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Idcanton">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Idcanton">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Idcanton">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

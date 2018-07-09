@@ -1,0 +1,11 @@
+C:\Users\Alonso Herrera\source\repos\ProyectoW1\ProyectoW1\bin\Debug\netcoreapp2.0\ProyectoW1.deps.json
+C:\Users\Alonso Herrera\source\repos\ProyectoW1\ProyectoW1\bin\Debug\netcoreapp2.0\ProyectoW1.runtimeconfig.json
+C:\Users\Alonso Herrera\source\repos\ProyectoW1\ProyectoW1\bin\Debug\netcoreapp2.0\ProyectoW1.runtimeconfig.dev.json
+C:\Users\Alonso Herrera\source\repos\ProyectoW1\ProyectoW1\bin\Debug\netcoreapp2.0\ProyectoW1.dll
+C:\Users\Alonso Herrera\source\repos\ProyectoW1\ProyectoW1\bin\Debug\netcoreapp2.0\ProyectoW1.pdb
+C:\Users\Alonso Herrera\source\repos\ProyectoW1\ProyectoW1\obj\Debug\netcoreapp2.0\ProyectoW1.csprojAssemblyReference.cache
+C:\Users\Alonso Herrera\source\repos\ProyectoW1\ProyectoW1\obj\Debug\netcoreapp2.0\ProyectoW1.csproj.CoreCompileInputs.cache
+C:\Users\Alonso Herrera\source\repos\ProyectoW1\ProyectoW1\obj\Debug\netcoreapp2.0\ProyectoW1.AssemblyInfoInputs.cache
+C:\Users\Alonso Herrera\source\repos\ProyectoW1\ProyectoW1\obj\Debug\netcoreapp2.0\ProyectoW1.AssemblyInfo.cs
+C:\Users\Alonso Herrera\source\repos\ProyectoW1\ProyectoW1\obj\Debug\netcoreapp2.0\ProyectoW1.dll
+C:\Users\Alonso Herrera\source\repos\ProyectoW1\ProyectoW1\obj\Debug\netcoreapp2.0\ProyectoW1.pdb

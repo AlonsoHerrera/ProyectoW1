@@ -1,0 +1,53 @@
+﻿@model IEnumerable<ProyectoW1.DBModels.Calificacion>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Calificacion1)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Comentario)
+                </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IdeventoNavigation)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IdusuarioNavigation)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Calificacion1)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Comentario)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdeventoNavigation.Idevento)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdusuarioNavigation.Idusuario)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Idcalifiacion">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Idcalifiacion">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Idcalifiacion">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

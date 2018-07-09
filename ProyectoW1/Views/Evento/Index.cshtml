@@ -1,0 +1,83 @@
+﻿@model IEnumerable<ProyectoW1.DBModels.Evento>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.IdtipoEvento)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.FechaInicio)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.FechaFinal)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Limite)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Estado)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Calificacion)
+                </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IdexpositorNavigation)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IdtemaNavigation)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.IdubicacionNavigation)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdtipoEvento)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FechaInicio)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FechaFinal)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Limite)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Estado)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Calificacion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdexpositorNavigation.Idusuario)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdtemaNavigation.Idtema)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.IdubicacionNavigation.Idubicacion)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Idevento">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Idevento">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Idevento">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

@@ -1,0 +1,51 @@
+﻿@model ProyectoW1.DBModels.Ubicacion
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Ubicacion</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Lugar)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Lugar)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.IdcantonNavigation)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.IdcantonNavigation.Idcanton)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.IddistritoNavigation)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.IddistritoNavigation.Iddistrito)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.IdeventoNavigation)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.IdeventoNavigation.Idevento)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.IdprovinciaNavigation)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.IdprovinciaNavigation.Idprovincia)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="Idubicacion" />
+        <input type="submit" value="Delete" class="btn btn-default" /> |
+        <a asp-action="Index">Back to List</a>
+    </form>
+</div>

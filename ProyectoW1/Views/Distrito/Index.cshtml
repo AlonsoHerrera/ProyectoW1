@@ -1,0 +1,53 @@
+﻿@model IEnumerable<ProyectoW1.DBModels.Distrito>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Idprovicia)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Idcanton)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.CodDistrito)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Nombre)
+                </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Idprovicia)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Idcanton)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CodDistrito)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nombre)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Iddistrito">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Iddistrito">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Iddistrito">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

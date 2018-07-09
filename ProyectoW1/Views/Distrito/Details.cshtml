@@ -1,0 +1,42 @@
+﻿@model ProyectoW1.DBModels.Distrito
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Distrito</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Idprovicia)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Idprovicia)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Idcanton)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Idcanton)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.CodDistrito)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.CodDistrito)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Nombre)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Nombre)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Iddistrito">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

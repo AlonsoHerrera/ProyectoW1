@@ -1,0 +1,42 @@
+﻿@model ProyectoW1.DBModels.Reserva
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Reserva</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Reserva1)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Reserva1)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Confirma)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Confirma)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.IdeventoNavigation)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.IdeventoNavigation.Idevento)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.IdusuarioNavigation)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.IdusuarioNavigation.Idusuario)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Idreserva">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
